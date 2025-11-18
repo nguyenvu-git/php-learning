@@ -1,8 +1,10 @@
 import { NavLink, Link } from "react-router-dom";
+import Header from "../components/Header";
 export default function HomePage() {
   return (
     <>
-      <div className="w-[80%] mx-auto">
+      <Header></Header>
+      <div className="w-[80%] mx-auto mt-30">
         <p className="text-2xl font-bold">Danh sách bài tập</p>
         <div className="flex flex-col gap-2 mt-4">
           <Link to={"/"} className="hover:font-medium">
