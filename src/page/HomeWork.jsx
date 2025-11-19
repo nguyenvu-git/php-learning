@@ -8,7 +8,10 @@ export default function HomeWork() {
         <p className="text-2xl font-bold">Danh sách bài tập về nhà</p>
         <div className="flex flex-col gap-2 mt-4">
           <Link className="hover:font-medium" to={"/btvn1"}>
-            BTVN buổi 1
+            Trang đăng nhập (Auth)
+          </Link>
+          <Link className="hover:font-medium" to={"/product"}>
+            Products
           </Link>
         </div>
       </div>

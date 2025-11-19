@@ -5,6 +5,8 @@ import HomePage from "./page/HomePage";
 import BTVN1 from "./components/BTVN1";
 import HomeSchool from "./page/HomeSchool";
 import HomeWork from "./page/HomeWork";
+import ShowProducts from "./components/ShowProducts";
+import Bai2 from "./components/Bai2";
 function App() {
   return (
     <>
@@ -13,7 +15,9 @@ function App() {
         <Route path="/homeschool" element={<HomeSchool></HomeSchool>}></Route>
         <Route path="/homework" element={<HomeWork></HomeWork>}></Route>
         <Route path="/bai1" element={<Bai1></Bai1>}></Route>
+        <Route path="/bai2" element={<Bai2></Bai2>}></Route>
         <Route path="/btvn1" element={<BTVN1></BTVN1>}></Route>
+        <Route path="/product" element={<ShowProducts></ShowProducts>}></Route>
       </Routes>
     </>
   );
