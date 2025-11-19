@@ -7,6 +7,7 @@ import HomeSchool from "./page/HomeSchool";
 import HomeWork from "./page/HomeWork";
 import ShowProducts from "./components/ShowProducts";
 import Bai2 from "./components/Bai2";
+import HomeProducts from "./training/day-1/HomeProducts";
 function App() {
   return (
     <>
@@ -19,6 +20,9 @@ function App() {
         <Route path="/btvn1" element={<BTVN1></BTVN1>}></Route>
         <Route path="/product" element={<ShowProducts></ShowProducts>}></Route>
       </Routes>
+
+      {/* training */}
+      {/* <HomeProducts></HomeProducts> */}
     </>
   );
 }
