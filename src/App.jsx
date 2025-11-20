@@ -7,7 +7,8 @@ import HomeSchool from "./page/HomeSchool";
 import HomeWork from "./page/HomeWork";
 import ShowProducts from "./components/ShowProducts";
 import Bai2 from "./components/Bai2";
-import HomeProducts from "./training/day-1/HomeProducts";
+import HomeProducts from "./train/day-1/HomeProducts";
+import Home from "./train/day-2/Home";
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
 
       {/* training */}
       {/* <HomeProducts></HomeProducts> */}
+      <Home></Home>
     </>
   );
 }
