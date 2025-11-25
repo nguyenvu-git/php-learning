@@ -9,22 +9,31 @@ import ShowProducts from "./components/ShowProducts";
 import Bai2 from "./components/Bai2";
 import HomeProducts from "./train/day-1/HomeProducts";
 import Home from "./train/day-2/Home";
+import Dashboard from "./train/day-3/Dashboard";
+import Dashboards from "./train/day-4/Dashboard";
+import ProductDetail from "./train/day-4/ProductDetail";
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<HomePage></HomePage>}></Route>
+        {/* <Route path="/" element={<HomePage></HomePage>}></Route> */}
         <Route path="/homeschool" element={<HomeSchool></HomeSchool>}></Route>
         <Route path="/homework" element={<HomeWork></HomeWork>}></Route>
         <Route path="/bai1" element={<Bai1></Bai1>}></Route>
         <Route path="/bai2" element={<Bai2></Bai2>}></Route>
         <Route path="/btvn1" element={<BTVN1></BTVN1>}></Route>
         <Route path="/product" element={<ShowProducts></ShowProducts>}></Route>
+
+        <Route path="/" element={<Dashboards />} />
+        <Route path="/products/:id" element={<ProductDetail />} />
       </Routes>
 
       {/* training */}
       {/* <HomeProducts></HomeProducts> */}
-      <Home></Home>
+      {/* <Home></Home> */}
+      {/* <Dashboard></Dashboard> */}
+
+      {/* <Dashboards></Dashboards> */}
     </>
   );
 }
