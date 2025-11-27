@@ -8,7 +8,7 @@ const Dashboard = () => {
   const [filterCate, setFilterCate] = useState("all");
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
-  const limit = 9;
+  const limit = 10;
   useEffect(() => {
     const fetchProducts = async () => {
       try {
@@ -53,7 +53,7 @@ const Dashboard = () => {
 
   return (
     <>
-      <div className="w-[80%] mx-auto">
+      <div className="w-[80%] mx-auto mt-24">
         <FilterBar
           categories={category}
           onCharge={(e) => setFilterCate(e.target.value)}

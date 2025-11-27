@@ -12,6 +12,9 @@ export default function HomeSchool(){
           <Link className="hover:font-medium" to={"/bai2"}>
             Bai 2 - 19/11/2025
           </Link>
+          <Link className="hover:font-medium" to={"/bai3"}>
+            Bai 3 - 26/11/2025
+          </Link>
         </div>
       </div>
     </>

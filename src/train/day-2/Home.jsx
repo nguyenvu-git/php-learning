@@ -7,7 +7,7 @@ export default function Home() {
       <div className="w-[80%] mx-auto flex justify-center">
         <button
           onClick={() => setClickSignUp(true)}
-          className="px-2 py-4 border rounded-3xl"
+          className="px-6 py-4 border rounded-4xl hover:border-2 cursor-pointer"
         >
           Sign Up
         </button>

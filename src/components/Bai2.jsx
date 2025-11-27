@@ -31,8 +31,20 @@ export default function Bai2() {
               <td class="py-2 px-4 border-b">10</td>
             </tr>
             <tr class="hover:bg-gray-100">
+              <td class="py-2 px-4 border-b">4</td>
+              <td class="py-2 px-4 border-b">Nguyễn Trường Giang</td>
+              <td class="py-2 px-4 border-b">74DCTT22429</td>
+              <td class="py-2 px-4 border-b">10</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="py-2 px-4 border-b">5</td>
+              <td class="py-2 px-4 border-b">Lê Đình Quốc Huy</td>
+              <td class="py-2 px-4 border-b">74DCTT22429</td>
+              <td class="py-2 px-4 border-b">10</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
               <td colspan="4" class="py-2 px-4 border-b">
-                Tổng số sinh viên: <span class="text-blue-600">2</span>
+                Tổng số sinh viên: <span class="text-blue-600">5</span>
               </td>
             </tr>
           </tbody>

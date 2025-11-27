@@ -13,6 +13,9 @@ export default function HomeWork() {
           <Link className="hover:font-medium" to={"/product"}>
             Products
           </Link>
+          <Link className="hover:font-medium" to={"/btvnjs"}>
+            BTVN JS
+          </Link>
         </div>
       </div>
     </>

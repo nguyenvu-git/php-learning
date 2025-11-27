@@ -63,7 +63,9 @@ export default function SignUp({ setSubmit }) {
           <input
             value={name}
             type="text"
-            className={`p-2 border ${errors.name ? "border-red-500" : ""}`}
+            className={`py-2 px-4 border ${
+              errors.name ? "border-red-500" : ""
+            } rounded-xl `}
             placeholder="User name"
             onChange={(e) => setName(e.target.value)}
           />
@@ -73,7 +75,9 @@ export default function SignUp({ setSubmit }) {
           <input
             value={email}
             type="email"
-            className={`p-2 border ${errors.email ? "border-red-500" : ""}`}
+            className={`py-2 px-4 border ${
+              errors.email ? "border-red-500" : ""
+            } rounded-xl`}
             placeholder="Email"
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -85,7 +89,9 @@ export default function SignUp({ setSubmit }) {
           <input
             value={password}
             type="password"
-            className={`p-2 border ${errors.password ? "border-red-500" : ""}`}
+            className={`py-2 px-4 border ${
+              errors.password ? "border-red-500" : ""
+            } rounded-xl`}
             placeholder="Password"
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -97,7 +103,9 @@ export default function SignUp({ setSubmit }) {
           <input
             value={confirm}
             type="password"
-            className={`p-2 border ${errors.confirm ? "border-red-500" : ""}`}
+            className={`py-2 px-4 border ${
+              errors.confirm ? "border-red-500" : ""
+            } rounded-xl`}
             placeholder="Confirm"
             onChange={(e) => setConfirm(e.target.value)}
           />
@@ -108,7 +116,7 @@ export default function SignUp({ setSubmit }) {
 
         <button
           type="submit"
-          className="w-[20%] mx-auto flex items-center justify-center border mt-2 p-2"
+          className="w-[20%] mx-auto flex items-center justify-center border mt-2 p-2 rounded-2xl cursor-pointer hover:bg-black hover:text-white"
         >
           Create account
         </button>

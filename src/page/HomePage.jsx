@@ -16,6 +16,7 @@ export default function HomePage() {
           <Link className="hover:font-medium" to={"/btvn1"}>
             BTVN buổi 1
           </Link>
+          
         </div>
       </div>
     </>
