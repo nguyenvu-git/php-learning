@@ -16,6 +16,9 @@ export default function HomeWork() {
           <Link className="hover:font-medium" to={"/btvnjs"}>
             BTVN JS
           </Link>
+          <Link className="hover:font-medium" to={"/inspectorColor"}>
+            Check Style
+          </Link>
         </div>
       </div>
     </>

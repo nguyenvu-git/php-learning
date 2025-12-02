@@ -16,6 +16,9 @@ import Bai3 from "./components/Bai3";
 import Dashboardd from "./train/redo-day-4/Dashboardd";
 import ProductDetaill from "./train/redo-day-4/ProductDetaill";
 import BtvnJS from "./components/btvnJS";
+import AvatarUpload from "./train/day-5/AvatarUpload";
+import StudentList from "./train/day-6/StudentList";
+import TextInspector from "./components/TextInspector";
 function App() {
   return (
     <>
@@ -29,7 +32,10 @@ function App() {
         <Route path="/btvn1" element={<BTVN1></BTVN1>}></Route>
         <Route path="/product" element={<ShowProducts></ShowProducts>}></Route>
         <Route path="/btvnjs" element={<BtvnJS></BtvnJS>}></Route>
-
+        <Route
+          path="/inspectorColor"
+          element={<TextInspector></TextInspector>}
+        ></Route>
         {/* <Route path="/" element={<Dashboards />} />
         <Route path="/products/:id" element={<ProductDetail />} /> */}
         {/* <Route path="/" element={<Dashboardd />} />
@@ -42,6 +48,8 @@ function App() {
       {/* <Dashboard></Dashboard> */}
 
       {/* <Dashboards></Dashboards> */}
+      {/* <AvatarUpload></AvatarUpload> */}
+      <StudentList></StudentList>
     </>
   );
 }
