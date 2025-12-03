@@ -8,17 +8,19 @@ import HomeWork from "./page/HomeWork";
 import ShowProducts from "./components/ShowProducts";
 import Bai2 from "./components/Bai2";
 import HomeProducts from "./train/day-1/HomeProducts";
-import Home from "./train/day-2/Home";
+import Home from "./baigk/Home";
 import Dashboard from "./train/day-3/Dashboard";
 import Dashboards from "./train/day-4/Dashboard";
 import ProductDetail from "./train/day-4/ProductDetail";
 import Bai3 from "./components/Bai3";
 import Dashboardd from "./train/redo-day-4/Dashboardd";
 import ProductDetaill from "./train/redo-day-4/ProductDetaill";
-import BtvnJS from "./components/btvnJS";
+import BtvnJS from "./baigk/btvnJS";
 import AvatarUpload from "./train/day-5/AvatarUpload";
 import StudentList from "./train/day-6/StudentList";
-import TextInspector from "./components/TextInspector";
+import TextInspector from "./baigk/TextInspector";
+import HomeStudents from "./train/day-6/HomeStudents";
+import DomExample from "./baigk/DomExample";
 function App() {
   return (
     <>
@@ -32,6 +34,10 @@ function App() {
         <Route path="/btvn1" element={<BTVN1></BTVN1>}></Route>
         <Route path="/product" element={<ShowProducts></ShowProducts>}></Route>
         <Route path="/btvnjs" element={<BtvnJS></BtvnJS>}></Route>
+        <Route
+          path="/btvntextcharge"
+          element={<DomExample></DomExample>}
+        ></Route>
         <Route
           path="/inspectorColor"
           element={<TextInspector></TextInspector>}
@@ -49,7 +55,8 @@ function App() {
 
       {/* <Dashboards></Dashboards> */}
       {/* <AvatarUpload></AvatarUpload> */}
-      <StudentList></StudentList>
+      {/* <StudentList></StudentList> */}
+      <HomeStudents></HomeStudents>
     </>
   );
 }

@@ -19,6 +19,9 @@ export default function HomeWork() {
           <Link className="hover:font-medium" to={"/inspectorColor"}>
             Check Style
           </Link>
+          <Link className="hover:font-medium" to={"/btvntextcharge"}>
+            Text Change
+          </Link>
         </div>
       </div>
     </>

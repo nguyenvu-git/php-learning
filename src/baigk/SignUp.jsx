@@ -48,6 +48,12 @@ export default function SignUp({ setSubmit }) {
     setErrors(newErrors);
 
     if (!hasError) {
+      console.log({
+        name,
+        email,
+        password,
+        confirm,
+      });
       alert("Đăng ký thành công");
       setSubmit(false);
     }
@@ -59,7 +65,6 @@ export default function SignUp({ setSubmit }) {
 
       <form onSubmit={handleSubmit}>
         <div className="w-full flex flex-col gap-3">
-          {/* NAME */}
           <input
             value={name}
             type="text"
@@ -67,11 +72,13 @@ export default function SignUp({ setSubmit }) {
               errors.name ? "border-red-500" : ""
             } rounded-xl `}
             placeholder="User name"
-            onChange={(e) => setName(e.target.value)}
+            onChange={(e) => {
+              setName(e.target.value);
+              console.log(e.target.value);
+            }}
           />
-          <p className="text-red-500 text-[10px] min-h-[16px]">{errors.name}</p>
+          <p className="text-red-500 text-[10px] min-h-[16px] text">{errors.name}</p>
 
-          {/* EMAIL */}
           <input
             value={email}
             type="email"
@@ -85,7 +92,6 @@ export default function SignUp({ setSubmit }) {
             {errors.email}
           </p>
 
-          {/* PASSWORD */}
           <input
             value={password}
             type="password"
