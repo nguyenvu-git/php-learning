@@ -6,7 +6,7 @@ export default function DomExample() {
 
   const handleChangeContent = () => {
     setTitle("Nội dung đã thay đổi!");
-    setFirstParagraphClass("text-red-600"); // đổi màu chữ
+    setFirstParagraphClass("text-red-600"); 
   };
 
   return (

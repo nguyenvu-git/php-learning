@@ -6,6 +6,7 @@ export default function StudentList() {
   const [open, setOpen] = useState(false);
   const [mode, setMode] = useState("Thêm sinh viên");
   const [selectStudent, setSelectStudent] = useState(null);
+
   const fetchStudents = async () => {
     try {
       const res = await fetch("http://localhost:8088/trainingphp/list.php");
@@ -18,6 +19,22 @@ export default function StudentList() {
   useEffect(() => {
     fetchStudents();
   }, []);
+
+  const handleDelete = async (id) => {
+    try {
+      const formData = new FormData();
+      formData.append("id", id); // hoặc masv nếu backend xóa theo masv
+
+      await fetch("http://localhost:8088/trainingphp/delete.php", {
+        method: "POST",
+        body: formData,
+      });
+
+      fetchStudents(); // load lại danh sách
+    } catch (err) {
+      console.error("Lỗi khi xóa sinh viên:", err);
+    }
+  };
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
@@ -67,7 +84,10 @@ export default function StudentList() {
                     >
                       Sửa
                     </button>
-                    <button className="font-medium rounded-2xl bg-red-400 py-2 px-4 text-white cursor-pointer">
+                    <button
+                      onClick={() => handleDelete(sv.id)}
+                      className="font-medium rounded-2xl bg-red-400 py-2 px-4 text-white cursor-pointer"
+                    >
                       Xóa
                     </button>
                   </td>

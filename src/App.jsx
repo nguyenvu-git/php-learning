@@ -21,6 +21,7 @@ import StudentList from "./train/day-6/StudentList";
 import TextInspector from "./baigk/TextInspector";
 import HomeStudents from "./train/day-6/HomeStudents";
 import DomExample from "./baigk/DomExample";
+import Login from "./signIn/Login";
 function App() {
   return (
     <>
@@ -57,6 +58,7 @@ function App() {
       {/* <AvatarUpload></AvatarUpload> */}
       {/* <StudentList></StudentList> */}
       <HomeStudents></HomeStudents>
+      <Login></Login>
     </>
   );
 }

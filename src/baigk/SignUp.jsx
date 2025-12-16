@@ -61,10 +61,10 @@ export default function SignUp({ setSubmit }) {
 
   return (
     <>
-      <p className="w-full text-center text-4xl font-semibold mb-6">Sign Up</p>
+      <p className="w-full text-center text-4xl font-semibold">Sign Up</p>
 
       <form onSubmit={handleSubmit}>
-        <div className="w-full flex flex-col gap-3">
+        <div className="w-full flex flex-col gap-3 mt-14">
           <input
             value={name}
             type="text"
@@ -77,7 +77,9 @@ export default function SignUp({ setSubmit }) {
               console.log(e.target.value);
             }}
           />
-          <p className="text-red-500 text-[10px] min-h-[16px] text">{errors.name}</p>
+          <p className="text-red-500 text-[10px] min-h-[16px] text">
+            {errors.name}
+          </p>
 
           <input
             value={email}
@@ -104,8 +106,7 @@ export default function SignUp({ setSubmit }) {
           <p className="text-red-500 text-[10px] min-h-[16px]">
             {errors.password}
           </p>
-
-          {/* CONFIRM */}
+          
           <input
             value={confirm}
             type="password"
@@ -122,7 +123,7 @@ export default function SignUp({ setSubmit }) {
 
         <button
           type="submit"
-          className="w-[20%] mx-auto flex items-center justify-center border mt-2 p-2 rounded-2xl cursor-pointer hover:bg-black hover:text-white"
+          className="w-[20%] mx-auto flex items-center justify-center border mt-4 p-2 rounded-2xl cursor-pointer hover:bg-black hover:text-white"
         >
           Create account
         </button>
